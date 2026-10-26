@@ -143,7 +143,7 @@ adb shell cat /proc/net/tcp6
 
 ## Licencias
 
-- Código del repositorio: ver `LICENSE`.
+- Código del repositorio: licencia MIT (`LICENSE`).
 - Fuente Outfit: SIL Open Font License 1.1 (`launcher/app/src/main/assets/fonts/OFL.txt`).
 - Este proyecto no está afiliado a CVTE, MediaTek ni ningún fabricante de televisores. Úsalo bajo tu
   responsabilidad.
