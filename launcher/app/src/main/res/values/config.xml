@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Default configuration. To personalise without touching this file, copy it to
+  app/src/main/res-local/values/config.xml (ignored by git): values there win.
+-->
+<resources>
+    <!-- Tiles per row in the grid below the dock (4 to 7). -->
+    <integer name="columns">5</integer>
+    <!-- Dock tile size, as "how many tiles would fit across the screen":
+         a bigger number means smaller tiles (3 = largest). The dock band
+         shrinks around its tiles and is aligned left with the grid. -->
+    <integer name="dock_columns">6</integer>
+
+    <!-- Dock, left to right. Each item is either an app package name, or an
+         input shortcut written as  input:SOURCE|Label|banner  where SOURCE is the
+         TV's own source name (HDMI 1, HDMI 2, HDMI 3, AV, TV...) and banner is
+         assets/banners/<banner>.png. Apps that are not installed are skipped.
+         An app's banner can be replaced with assets/banners/<package>.png. -->
+    <string-array name="dock_apps">
+        <item>com.google.android.youtube.tv</item>
+        <item>input:HDMI 1|HDMI 1|livetv</item>
+        <item>input:TV|TV|livetv</item>
+    </string-array>
+
+    <!-- Twinkle the wallpaper's stars (small patch of sky, ~15 fps, only while the
+         top of Home is on screen). Star positions in StarField.java are tuned to
+         one specific wallpaper, so this is off by default. -->
+    <bool name="star_animation">false</bool>
+    <!-- Draw the constellation Libra and light its stars one by one. -->
+    <bool name="show_libra">false</bool>
+
+    <!-- Apps never shown on the home screen. -->
+    <string-array name="hidden_apps">
+        <item>com.spocky.projengmenu</item>
+        <item>de.szalkowski.activitylauncher</item>
+        <item>com.cvte.tv.launcher.fall</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.android.documentsui</item>
+    </string-array>
+
+    <!-- What "Live TV" in the Inputs menu opens (the stock CVTE TV player). -->
+    <string name="live_tv_component">com.cvte.tv.androidsetting/.TvSettingActivity</string>
+</resources>

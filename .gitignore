@@ -1,0 +1,21 @@
+# Personal data from the TV this was developed on: never publish
+backup/
+shots/
+.tv-host
+NOTES-local.md
+
+# Personal launcher configuration (overlay over res/values/config.xml)
+launcher/app/src/main/res-local/
+
+# Third-party / personal artwork: generate locally, see README
+launcher/wallpaper-master.png
+launcher/app/src/main/assets/wallpaper.*
+launcher/app/src/main/assets/banners/*
+!launcher/app/src/main/assets/banners/livetv.png
+
+# Build output, SDK, keys
+launcher/build/
+android-sdk/
+*.apk
+*.keystore
+*.jks
