@@ -34,7 +34,7 @@ Launcher ligero estilo Apple TV y guía de limpieza (debloat) para televisores A
 ## Uso rápido
 
 ```bash
-echo 192.168.1.50 > .tv-host        # la IP de tu tele (este archivo no se sube a git)
+echo 192.168.x.x > .tv-host        # la IP de tu tele 
 adb connect 192.168.1.50:5555       # acepta el aviso "¿Permitir depuración?" en la tele
 bash build-and-install.sh           # compila, instala y lo pone como inicio predeterminado
 ```
